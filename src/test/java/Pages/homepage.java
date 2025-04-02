@@ -30,7 +30,7 @@ package Pages;
 	
 			WebElement dropdown = driver.findElement(By.id("gender-field"));
 			Select select = new Select(dropdown);
-	        select.selectByValue("F");
+	        select.selectByValue("M");
 	        driver.findElement(By.xpath("//*[@id=\"next-button\"]")).click();
 	        driver.findElement(By.name("birthdateDay")).sendKeys("21");
 	        driver.findElement(By.name("birthdateYear")).sendKeys("2003");
